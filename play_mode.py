@@ -40,6 +40,7 @@ def init():
         game_world.add_object(ball, 1)
         game_world.add_collision_pair('boy:ball', None, ball)
 
+
 def finish():
     game_world.clear()
     pass

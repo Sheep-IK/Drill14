@@ -10,10 +10,10 @@ class Ball:
     def __init__(self, x=None, y=None):
         if Ball.image == None:
             Ball.image = load_image('ball21x21.png')
-        self.x = random.randint(100, 1600)
-        self.y = random.randint(100, 900)
-        #self.x = x if x else random.randint(100, 1600)
-        #self.y = y if y else random.randint(100, 900)
+        #self.x = random.randint(100, 1600)
+        #self.y = random.randint(100, 900)
+        self.x = x if x else random.randint(100, 1600)
+        self.y = y if y else random.randint(100, 900)
 
     def draw(self):
         sx = self.x - server.background.window_left
